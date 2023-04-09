@@ -36,10 +36,10 @@ export const Profile = () => {
           </span>
         }
         buttons={[
-          <a href="https://www.linkedin.com/in/amir-m-zad/" target="_blank">
+          <a key="linkedin" href="https://www.linkedin.com/in/amir-m-zad/" target="_blank">
             <IconWrapper className="text-[#0a66c2]" icon={<LinkedinIcon />} />
           </a>,
-          <a href="https://github.com/liiinx-com" target="_blank">
+          <a key="github" href="https://github.com/liiinx-com" target="_blank">
             <IconWrapper className="text-[#171515]" icon={<GithubIcon />} />
           </a>,
         ]}
