@@ -1,15 +1,6 @@
 import { SkillSet } from "@/types";
 import { SkillItem } from "./skill-item";
 
-// interface SkillItemProps {
-//   badgeText?: string;
-//   superTitle?: string;
-//   title: string;
-//   children: ReactNode;
-//   subTitle?: string;
-//   button?: ReactNode;
-// }
-
 interface SkillSetBoxProps {
   skillSet: SkillSet;
 }

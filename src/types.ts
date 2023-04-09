@@ -1,4 +1,13 @@
-export interface Profile {}
+export interface Intro {}
+
+export interface AboutItem {
+  id: string;
+  order: number;
+  title: string;
+  content: string[];
+  titleClassName?: string;
+  iconClassName?: string;
+}
 
 export interface Project {
   id: string;

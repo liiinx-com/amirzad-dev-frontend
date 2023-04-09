@@ -1,6 +1,6 @@
 import { IconWrapper } from "@/components";
 import { ProjectCardProps } from "./index";
-import { YoutubeIcon, GithubIcon } from "@/components/icons";
+import { GithubIcon } from "@/components/icons";
 
 const ICON_SIZE = 16;
 

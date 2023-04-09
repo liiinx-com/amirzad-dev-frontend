@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --logo-primary: #2e7d32;
   --logo-primary-hover: #43a047;

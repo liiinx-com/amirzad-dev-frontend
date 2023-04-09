@@ -1,15 +1,14 @@
-import { SkillSet, WorkHistoryItem, Project } from "./types";
+import { SkillSet, WorkHistoryItem, Project, AboutItem } from "./types";
 import { orderBy } from "@/utils/lodash";
 
 export const getWorkHistory = () => orderBy(workHistory, ["order"], ["asc"]);
-
+export const getProfileItems = () => orderBy(aboutItems, ["order"], ["asc"]);
 export const getSkillSets = () => {
   skillSets.forEach((s) => {
     s.skills = orderBy(s.skills, ["order", "rate"], ["asc", "asc"]);
   });
   return orderBy(skillSets, ["order"], ["asc"]);
 };
-
 export const getProjects = () => {
   const projects: Project[] = [
     {
@@ -152,6 +151,44 @@ export const getProjects = () => {
   ];
   return orderBy(projects, ["order"], ["asc"]);
 };
+
+const aboutItems: AboutItem[] = [
+  {
+    id: "1",
+    title: "Values / Mindset",
+    content: [
+      "Almost nothing worthy is possible without Teamwork.",
+      "The best preparation for good work tomorrow is to do good work today.",
+      "Quality is everyone's responsibility.",
+      "It is only when I am doing my work that I feel truly alive.",
+      "Success consists of going from failure to failure without loss of enthusiasm.",
+    ],
+    order: 1,
+    iconClassName: "",
+    titleClassName: "",
+  },
+  {
+    id: "2",
+    title: "Education",
+    content: [
+      "Master of Software Engineering - Concordia, Montreal - June 2017 - May 2019 GPA: 3.2",
+    ],
+    order: 2,
+    iconClassName: "",
+    titleClassName: "",
+  },
+  {
+    id: "3",
+    title: "Certifications",
+    content: [
+      "Blockchain Business Models - Duke University - Coursera",
+      "Cryptocurrency and Blockchain: An Introduction to Digital Currencies - Wharton University - Coursera",
+    ],
+    order: 3,
+    iconClassName: "",
+    titleClassName: "",
+  },
+];
 
 const workHistory: WorkHistoryItem[] = [
   {

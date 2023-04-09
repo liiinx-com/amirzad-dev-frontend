@@ -42,7 +42,7 @@ export const WorkHistory = ({ history }: WorkHistoryProps) => {
   if (history.length === 0) return null;
 
   return (
-    <Section className="overflow-hidden">
+    <Section sectionId="work" className="overflow-hidden">
       <Container>
         <div className="flex flex-col text-center w-full mb-20">
           <Title

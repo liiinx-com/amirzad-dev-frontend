@@ -10,7 +10,7 @@ export const Profile = () => {
       <CallToAction
         title="Full-Stack Engiiineer"
         content={
-          <span className="hover:shadow-lg shadow-md">
+          <span className="shadow-md">
             Hi, my name is <span className="text-logo-primary">Amir</span>. A
             software engineer with more than 8 years of experience in Web
             Development. Highly Passionate about{" "}
@@ -32,7 +32,8 @@ export const Profile = () => {
         subContent={
           <span>
             Ready and eager to step out of my comfort zone to tackle complex,
-            real-world problems. <h3 className="inline text-2xl">&#x1F680;</h3>
+            real-world problems.{" "}
+            <span className="inline text-2xl"> &#x1F680; </span>
           </span>
         }
         buttons={[
@@ -49,7 +50,7 @@ export const Profile = () => {
         ]}
         media={
           <Image
-            src="/assets/profile-image.jpg"
+            src="/assets/profile-image-01.jpg"
             alt="Amir Zad - Full stack engineer"
             // width={480}
             // height={360}

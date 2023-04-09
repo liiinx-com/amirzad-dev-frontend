@@ -30,7 +30,7 @@ export const CallToAction = ({
           <div className="flex lg:flex-row md:flex-col">
             {buttons?.map((btn, i) => (
               <span
-                className={`bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center ${
+                className={`bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:shadow-xl shadow-lg ${
                   i > 0 ? "lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0" : ""
                 } hover:bg-gray-200 focus:outline-none`}
               >
