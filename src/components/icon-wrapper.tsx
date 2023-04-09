@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
+import * as Icons from "./icons";
 
 interface IconWrapperProps {
   icon: ReactNode;
@@ -18,4 +19,14 @@ export const IconWrapper = ({
       {icon}
     </span>
   );
+};
+
+export const getIconByName = (name: "email" | "location" | "linkedin") => {
+  const icons = {
+    email: <Icons.EmailIcon />,
+    linkedin: <Icons.LinkedinIcon />,
+    location: <Icons.MapPinIcon />,
+  };
+
+  return icons[name] || <Icons.ChevronRightIcon />;
 };

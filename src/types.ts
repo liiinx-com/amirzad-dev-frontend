@@ -1,5 +1,12 @@
 export interface Intro {}
 
+export interface MenuItem {
+  title: string;
+  url: string;
+  order: number;
+  className?: string;
+}
+
 export interface AboutItem {
   id: string;
   order: number;
@@ -28,6 +35,16 @@ export interface Tag {
   title: string;
   order: number;
   className: string;
+}
+
+export interface ContactInfo {
+  id: string;
+  order: number;
+  title: string;
+  content: string;
+  iconName: "location" | "linkedin" | "email";
+  url?: string;
+  iconClassName?: string;
 }
 
 export interface WorkHistoryItem {

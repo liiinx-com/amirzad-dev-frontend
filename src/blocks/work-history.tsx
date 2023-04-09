@@ -68,6 +68,7 @@ export const WorkHistory = ({ history }: WorkHistoryProps) => {
             <div className="flex mx-auto flex-wrap mb-20">
               {history.map((i) => (
                 <TabItem
+                  key={i.id}
                   onClick={() => setSelectedItem(i)}
                   selected={selectedItem?.id === i.id}
                   item={i}

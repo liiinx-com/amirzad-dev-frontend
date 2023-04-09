@@ -1,6 +1,15 @@
-import { SkillSet, WorkHistoryItem, Project, AboutItem } from "./types";
+import {
+  SkillSet,
+  WorkHistoryItem,
+  Project,
+  AboutItem,
+  ContactInfo,
+  MenuItem,
+} from "./types";
 import { orderBy } from "@/utils/lodash";
 
+export const getMenuItems = () => orderBy(menuItems, ["order"], ["asc"]);
+export const getContactInfo = () => orderBy(contactInfo, ["order"], ["asc"]);
 export const getWorkHistory = () => orderBy(workHistory, ["order"], ["asc"]);
 export const getProfileItems = () => orderBy(aboutItems, ["order"], ["asc"]);
 export const getSkillSets = () => {
@@ -152,6 +161,36 @@ export const getProjects = () => {
   return orderBy(projects, ["order"], ["asc"]);
 };
 
+const contactInfo: ContactInfo[] = [
+  {
+    id: "1",
+    order: 1,
+    title: "Email",
+    content: "amirzad.dev@gmail.com",
+    url: "mailto:amirzad.dev@gmail.com",
+    iconName: "email",
+    iconClassName: "text-[#BB001B]",
+  },
+  {
+    id: "2",
+    order: 2,
+    title: "Linkedin",
+    content: "linkedin.com/in/amir-m-zad",
+    url: "https://www.linkedin.com/in/amir-m-zad/",
+    iconName: "linkedin",
+    iconClassName: "text-[#0a66c2]",
+  },
+  {
+    id: "3",
+    order: 3,
+    title: "Address",
+    content: "Mississauga, ON",
+    iconName: "location",
+    url: "https://www.google.com/maps?q=mississauga+ontario",
+    iconClassName: "text-green-700",
+  },
+];
+
 const aboutItems: AboutItem[] = [
   {
     id: "1",
@@ -197,16 +236,55 @@ const workHistory: WorkHistoryItem[] = [
     title: "IIROC",
     titleClassName: "text-yellow-600",
     role: "Senior Full-Stack Engineer",
-    duration: ["Nov 2020 - Present"],
+    duration: ["Nov 2020", "Present"],
     companyUrl:
       "https://www.linkedin.com/company/iiroc-investment-industry-regulatory-organization-of-canada-/mycompany/verification/",
-    content: [""],
+    content: [
+      "Work on Real-Time Customer Experience dashboard for Communication Service Providers.",
+      "Work on a variety of Microservices with technologies.",
+      "Design and develop UI-Backend REST API, and React UI in a team of more than 60 Software engineers",
+    ],
     companyIntro: "Investment Industry Regulatory Organization of Canada",
     tags: [
       {
         className: "bg-[#306998] text-[#FFD43B]",
         order: 1,
         title: "Python3",
+      },
+      {
+        className: "bg-[#61DBFB] text-[#282C34]",
+        order: 1,
+        title: "React",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Java(SpringBoot)",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "AWS EMR",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Django",
+      },
+      {
+        className: "bg-[#336791] text-white",
+        order: 1,
+        title: "Postgres",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Celery",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "PySpark",
       },
     ],
     imageUrl:
@@ -216,14 +294,69 @@ const workHistory: WorkHistoryItem[] = [
     id: "2",
     order: 2,
     title: "AUDELA",
-    duration: ["May 2019 - Nov 2020"],
+    duration: ["May 2019", "Nov 2020"],
     companyUrl: "https://www.linkedin.com/company/audela-ca/",
     titleClassName: "text-purple-700",
     role: "Senior Full-Stack Engineer",
-    content: [""],
+    content: [
+      "Work on Real-Time Customer Experience dashboard for Communication Service Providers.",
+      "Work on a variety of Microservices with technologies.",
+      "Design and develop UI-Backend REST API, and React UI in a team of more than 60 Software engineers",
+    ],
     companyIntro:
       "Providing AI-Based solutions to Communication Service Providers",
-    tags: [],
+    tags: [
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Kubernetes",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Docker",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Travis-CI",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "GoogleCloud",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Nestjs",
+      },
+      {
+        className: "bg-[#61DBFB] text-[#282C34]",
+        order: 1,
+        title: "React",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Java(SpringBoot)",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "TDD",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "MUI",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "KAFKA",
+      },
+    ],
     imageUrl:
       "https://media.licdn.com/dms/image/C4E0BAQExS8yLpBlCeA/company-logo_200_200/0/1651241768344?e=1689206400&v=beta&t=zYMxgZG5OxduEeha460TSxG42trZr83ZMj_BeGPrr6Y",
   },
@@ -231,12 +364,43 @@ const workHistory: WorkHistoryItem[] = [
     id: "3",
     order: 3,
     title: "C2RO",
-    duration: ["Feb 2018 - May 2019"],
+    duration: ["Feb 2018", "May 2019"],
     titleClassName: "text-violet-500",
     companyUrl: "https://www.linkedin.com/company/c2ro/",
     role: "Senior Full-Stack Engineer",
-    content: [""],
-    tags: [],
+    content: ["Design and develop Backend REST API and user's dashboard."],
+    tags: [
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "MERN Stack",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "TypeScript",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "RabbitMQ",
+      },
+      {
+        className: "bg-[#A41E11] text-white",
+        order: 1,
+        title: "Redis",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Java",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Python",
+      },
+    ],
     companyIntro: "Video Analytics AI-SaaS Platform",
     imageUrl:
       "https://media.licdn.com/dms/image/C4D0BAQECpPGX60PQMw/company-logo_200_200/0/1620787122457?e=1689206400&v=beta&t=LNx01_yKJaV1ubONHUcPxBYupPSK62cVYRwBCnmz9HU",
@@ -245,17 +409,45 @@ const workHistory: WorkHistoryItem[] = [
     id: "4",
     order: 4,
     title: "Rayan Bourse",
-    duration: ["Apr 2015 - Jun 2017"],
+    duration: ["Apr 2015", "Jun 2017"],
     titleClassName: "text-sky-500",
     companyUrl: "https://www.linkedin.com/company/rayan-bourse/",
     role: "Senior Full-Stack Engineer",
-
     companyIntro:
       "Providing Software Solutions to Stock Exchange Organization of Iran",
     content: [
-      "Designed and developed Analytics data portal which is an internal tool about big data ...",
+      "Developed 100% of webapp for traders to communicate better and share their views on Web and Mobile (android) platforms.",
+      "Programmed with Python+Django+Postgresql as backend and webUI and some workers with java communicating with Rabbitmq.",
+      "Developed 100% of REST API for mobile clients using Django Rest Framework",
+      "Developed 100% of hybrid mobile apps for traders using IONIC+Cordova+Angular for hybrid mobile clients.",
     ],
-    tags: [],
+    tags: [
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "Python",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 2,
+        title: "Django",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 4,
+        title: "RabbitMQ",
+      },
+      {
+        className: "bg-[#336791] text-white",
+        order: 3,
+        title: "Postgresql",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 5,
+        title: "Angular",
+      },
+    ],
     imageUrl:
       "https://media.licdn.com/dms/image/C4E0BAQGag6mKgnDPkw/company-logo_200_200/0/1594701534232?e=1689206400&v=beta&t=RMdqJTbCrDExTz7np_ZqJuuO_nyTLkHfY0hbzOIiJbc",
   },
@@ -457,4 +649,43 @@ const skillSets: SkillSet[] = [
   frontendSet,
   blockchainSet,
   devopsSet,
+];
+
+const menuItems: MenuItem[] = [
+  {
+    order: 1,
+    url: "#home",
+    title: "Home",
+  },
+  {
+    order: 2,
+    url: "#skills",
+    title: "Skills",
+  },
+  {
+    order: 3,
+    url: "#projects",
+    title: "Projects",
+  },
+  {
+    order: 4,
+    url: "#about",
+    title: "About",
+  },
+  {
+    order: 5,
+    url: "#work",
+    title: "Work History",
+  },
+  {
+    order: 6,
+    url: "#contact",
+    title: "Contact",
+  },
+  {
+    order: 7,
+    className: "text-blue-700",
+    title: "Linkedin",
+    url: "https://www.linkedin.com/in/amir-m-zad/",
+  },
 ];

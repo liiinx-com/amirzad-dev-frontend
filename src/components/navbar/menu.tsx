@@ -1,52 +1,9 @@
-interface MenuItem {
-  title: string;
-  url: string;
-  order: number;
-  className?: string;
-}
-const menuItems: MenuItem[] = [
-  {
-    order: 1,
-    url: "#home",
-    title: "Home",
-  },
-  {
-    order: 2,
-    url: "#skills",
-    title: "Skills",
-  },
-  {
-    order: 3,
-    url: "#projects",
-    title: "Projects",
-  },
-  {
-    order: 4,
-    url: "#about",
-    title: "About",
-  },
-  {
-    order: 5,
-    url: "#work",
-    title: "Work History",
-  },
-  {
-    order: 6,
-    url: "#contact",
-    title: "Contact",
-  },
-  {
-    order: 7,
-    className: "text-blue-700",
-    title: "Linkedin",
-    url: "https://www.linkedin.com/in/amir-m-zad/",
-  },
-];
+import { getMenuItems } from "@/data";
 
 export const Menu = () => {
   return (
     <>
-      {menuItems.map(({ title, className = "", url }) => {
+      {getMenuItems().map(({ title, className = "", url }) => {
         return (
           <a
             target={url.includes("linkedin") ? "_blank" : "_self"}

@@ -16,14 +16,13 @@ export const Navbar = () => {
   } = theme;
 
   return (
-    <nav className={`relative ${className} shadow `}>
+    <nav className={`relative ${className} shadow `} id="home">
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <a href="#">
               <Logo
                 text="Amir Zad"
-                // slogan="Full-Stack Engineer"
                 textClassName={logoClassName}
                 sloganClassName={sloganClassName}
               />
@@ -61,8 +60,6 @@ export const Navbar = () => {
               <button className="mx-4 text-gray-600 transform lg:block dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none">
                 <ThemeSwitch />
               </button>
-
-              <Button title="Download CV" />
             </div>
           </div>
         </div>
