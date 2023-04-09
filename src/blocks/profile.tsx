@@ -8,13 +8,15 @@ export const Profile = () => {
   return (
     <div>
       <CallToAction
-        title="Full-Stack Engineer"
+        title="Full-Stack Engiiineer"
         content={
-          <span>
+          <span className="hover:shadow-lg shadow-md">
             Hi, my name is <span className="text-logo-primary">Amir</span>. A
             software engineer with more than 8 years of experience in Web
             Development. Highly Passionate about{" "}
             <span className="text-[#FF8F00] font-medium">Blockchain</span>
+            {", "}
+            <span className="text-green-500 font-medium">Tokenization</span>
             {", "}
             <span className="text-[#1E88E5] font-medium">Web3</span>
             {", "}
@@ -22,9 +24,7 @@ export const Profile = () => {
               Devops
             </span>
             {", "}
-            <span className="text-[#FF9900] font-medium">
-              Cloud
-            </span>
+            <span className="text-[#FF9900] font-medium">Cloud</span>
             {"  and "}
             <span className="text-[#9C27B0] font-medium">SAAS</span>.
           </span>
@@ -32,14 +32,18 @@ export const Profile = () => {
         subContent={
           <span>
             Ready and eager to step out of my comfort zone to tackle complex,
-            real-world problems.
+            real-world problems. <h3 className="inline text-2xl">&#x1F680;</h3>
           </span>
         }
         buttons={[
-          <a href="https://www.linkedin.com/in/amir-m-zad/" target="_blank">
+          <a
+            key="linkedin"
+            href="https://www.linkedin.com/in/amir-m-zad/"
+            target="_blank"
+          >
             <IconWrapper className="text-[#0a66c2]" icon={<LinkedinIcon />} />
           </a>,
-          <a href="https://github.com/liiinx-com" target="_blank">
+          <a key="github" href="https://github.com/liiinx-com" target="_blank">
             <IconWrapper className="text-[#171515]" icon={<GithubIcon />} />
           </a>,
         ]}
@@ -51,7 +55,7 @@ export const Profile = () => {
             // height={360}
             width={360}
             height={300}
-            className={`object-cover object-center rounded-lg border-gray-600 border`}
+            className={`object-cover object-center rounded-lg border-gray-600 border hover:shadow-lg shadow-md`}
           />
         }
       />

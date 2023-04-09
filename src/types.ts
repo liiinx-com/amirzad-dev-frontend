@@ -1,5 +1,20 @@
 export interface Profile {}
 
+export interface Project {
+  id: string;
+  order: number;
+  featured: boolean;
+  title: string;
+  tags: Tag[];
+  content: string[];
+  category: string;
+  titleClassName?: string;
+  imageUrl?: string;
+  videoUrl?: string;
+  repoUrl?: string;
+  slug: string;
+}
+
 export interface Tag {
   title: string;
   order: number;
@@ -18,6 +33,7 @@ export interface WorkHistoryItem {
   companyIntro: string;
   titleClassName?: string;
   imageUrl?: string;
+  videoUrl?: string;
 }
 
 export interface SkillSet {

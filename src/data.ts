@@ -1,7 +1,157 @@
-import { SkillSet, WorkHistoryItem } from "./types";
+import { SkillSet, WorkHistoryItem, Project } from "./types";
 import { orderBy } from "@/utils/lodash";
 
 export const getWorkHistory = () => orderBy(workHistory, ["order"], ["asc"]);
+
+export const getSkillSets = () => {
+  skillSets.forEach((s) => {
+    s.skills = orderBy(s.skills, ["order", "rate"], ["asc", "asc"]);
+  });
+  return orderBy(skillSets, ["order"], ["asc"]);
+};
+
+export const getProjects = () => {
+  const projects: Project[] = [
+    {
+      id: "1",
+      order: 1,
+      slug: "royal-wallet",
+      category: "Royal Crypto Startup (MVP)",
+      content: [
+        "here goes some content about the crypto wallet project along with some images",
+      ],
+      title: "Royal Crypto Wallet",
+      titleClassName: "text-teal-500",
+      imageUrl: "/assets/rw-01.png",
+      featured: true,
+      repoUrl: "https://github.com/liiinx-com/rwallet",
+      videoUrl: "",
+      tags: [
+        {
+          className: "bg-[#61DBFB] text-[#282C34]",
+          order: 1,
+          title: "React Native",
+        },
+        {
+          className: "bg-[#F7452A] text-white",
+          order: 2,
+          title: "Swift",
+        },
+        {
+          className: "bg-[#9FC037] text-[#000]",
+          order: 2,
+          title: "Android",
+        },
+        {
+          className: "bg-yellow-300 text-[#232323]",
+          order: 2,
+          title: "UI/UX",
+        },
+        {
+          className: "bg-green-200 text-black",
+          order: 1,
+          title: "Cypress Testing",
+        },
+        {
+          className: "bg-purple-700 text-white",
+          order: 2,
+          title: "Product/Release Management",
+        },
+      ],
+    },
+    {
+      id: "2",
+      order: 2,
+      slug: "crypto-trader-bot",
+      content: [""],
+      category: "Royal Crypto Startup (MVP)",
+      title: "Royal Crypto Trader Bot",
+      titleClassName: "text-teal-500",
+      featured: true,
+      imageUrl: "/assets/trader-bot-02.png",
+      repoUrl: "https://github.com/liiinx-com/falcon-backend",
+      videoUrl: "",
+      tags: [
+        {
+          className: "bg-green-700 text-white",
+          order: 1,
+          title: "Microservices",
+        },
+        {
+          className: "bg-[#645FA1] text-white",
+          order: 2,
+          title: "Heroku",
+        },
+        {
+          className: "bg-[#E0234E] text-white",
+          order: 2,
+          title: "NestJS",
+        },
+        {
+          className: "bg-violet-700 text-white",
+          order: 2,
+          title: "Rest API",
+        },
+        {
+          className: "bg-[#336791] text-white",
+          order: 2,
+          title: "Postgresql",
+        },
+        {
+          className: "bg-[#A41E11] text-white",
+          order: 4,
+          title: "Redis",
+        },
+        {
+          className: "bg-[#0088CC] text-white",
+          order: 3,
+          title: "Telegram",
+        },
+      ],
+    },
+    {
+      id: "3",
+      order: 3,
+      slug: "personal-portfolio",
+      category: "Personal Project",
+      content: [""],
+      featured: false,
+      title: "Personal Portfolio",
+      titleClassName: "text-purple-600",
+      imageUrl: "/assets/portfolio-01.jpg",
+      repoUrl: "https://github.com/liiinx-com/amirzad-dev-backend",
+      videoUrl: "",
+      tags: [
+        {
+          className: "bg-black text-gray-100",
+          order: 1,
+          title: "NextJS 13.2",
+        },
+        {
+          className: "bg-[#683CB9] text-gray-200",
+          order: 1,
+          title: "React-Redux",
+        },
+        {
+          className: "bg-[#161616] text-gray-100",
+          order: 2,
+          title: "Circle-CI",
+        },
+        {
+          className: "bg-[#3BF7F0] text-black",
+          order: 2,
+          title: "Tailwind 3",
+        },
+        {
+          className: "bg-[#FF9900] text-black",
+          order: 2,
+          title: "AWS",
+        },
+      ],
+    },
+  ];
+  return orderBy(projects, ["order"], ["asc"]);
+};
 
 const workHistory: WorkHistoryItem[] = [
   {
@@ -76,15 +226,18 @@ const workHistory: WorkHistoryItem[] = [
 
 const blockchainSet: SkillSet = {
   id: "3",
-  slug: "blockchain",
-  title: "Blockchain",
+  slug: "crypto",
+  title: "BChain/Crypto",
   order: 3,
   skills: [
-    { id: "1", order: 3, rate: 8, title: "Trading View API" },
-    { id: "2", order: 4, rate: 8, title: "Trading View Charting" },
+    { id: "1", order: 3, rate: 8, title: "Trading View API/Libs" },
     { id: "2", order: 4, rate: 8, title: "Moralis" },
-    { id: "3", order: 1, rate: 8, title: "Binance API" },
+    { id: "3", order: 1, rate: 8, title: "Binance API/Websocket" },
     { id: "4", order: 2, rate: 8, title: "Hard-Hat" },
+    { id: "4", order: 2, rate: 8, title: "Ganache" },
+    { id: "4", order: 2, rate: 8, title: "XRPL.js" },
+    { id: "4", order: 2, rate: 8, title: "Pine Script" },
+    { id: "4", order: 2, rate: 8, title: "Algo-Trading/Scalping" },
     { id: "5", order: 2, rate: 5, title: "Solidity" },
   ],
   containerClassName: "border-yellow-500",
@@ -99,23 +252,23 @@ const devopsSet: SkillSet = {
   skills: [
     {
       id: "1",
-      order: 1,
+      order: 2,
       rate: 8,
       title: "EC2, S3, EMR",
     },
     {
       id: "1",
-      order: 1,
+      order: 3,
       rate: 8,
       title: "Redshift, DynamoDB",
     },
     { id: "1", order: 1, rate: 8, title: "CI/CD Pipelines" },
-    { id: "1", order: 1, rate: 8, title: "Code Commit/Deploy" },
-    { id: "2", order: 2, rate: 8, title: "Docker" },
-    { id: "3", order: 3, rate: 8, title: "Travis-CI/Circle-CI" },
-    { id: "4", order: 4, rate: 8, title: "Jenkins" },
+    { id: "1", order: 4, rate: 8, title: "Code Commit/Deploy" },
+    { id: "2", order: 7, rate: 8, title: "Docker" },
+    { id: "3", order: 6, rate: 8, title: "Travis-CI/Circle-CI" },
+    { id: "4", order: 5, rate: 8, title: "Jenkins" },
   ],
-  containerClassName: "border-pink-600",
+  containerClassName: "border-pink-400",
   videoUrl: "https://www.youtube.com/watch?v=_sEgB9TmCEY",
 };
 
@@ -193,7 +346,7 @@ const backendSet: SkillSet = {
       rate: 6,
     },
   ],
-  containerClassName: "border-green-300",
+  containerClassName: "border-green-500",
 };
 
 const frontendSet: SkillSet = {
@@ -258,36 +411,13 @@ const frontendSet: SkillSet = {
       rate: 6,
     },
   ],
-  containerClassName: "border-pink-300",
+  containerClassName: "border-purple-400",
   videoUrl: "https://www.youtube.com/watch?v=_sEgB9TmCEY",
 };
 
-export const skillSets: SkillSet[] = [
+const skillSets: SkillSet[] = [
   backendSet,
   frontendSet,
   blockchainSet,
   devopsSet,
 ];
-
-// export const skills  = [
-//   {
-//     id: "1",
-//     category: backendCat,
-//     title: "Vexillologist pitchfork",
-//   },
-//   {
-//     id: "2",
-//     category: backendCat,
-//     title: "Vexillologist pitchfork2",
-//   },
-//   {
-//     id: "3",
-//     category: backendCat,
-//     title: "Vexillologist pitchfork",
-//   },
-//   {
-//     id: "4",
-//     category: backendCat,
-//     title: "Vexillologist pitchfork",
-//   },
-// ];
