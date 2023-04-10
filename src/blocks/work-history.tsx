@@ -42,7 +42,7 @@ export const WorkHistory = ({ history }: WorkHistoryProps) => {
   if (history.length === 0) return null;
 
   return (
-    <Section className="overflow-hidden">
+    <Section sectionId="work" className="overflow-hidden">
       <Container>
         <div className="flex flex-col text-center w-full mb-20">
           <Title
@@ -68,6 +68,7 @@ export const WorkHistory = ({ history }: WorkHistoryProps) => {
             <div className="flex mx-auto flex-wrap mb-20">
               {history.map((i) => (
                 <TabItem
+                  key={i.id}
                   onClick={() => setSelectedItem(i)}
                   selected={selectedItem?.id === i.id}
                   item={i}

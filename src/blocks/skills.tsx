@@ -9,7 +9,7 @@ interface SkillsProps {
 
 export const Skills = ({ skillSets }: SkillsProps) => {
   return (
-    <Section className="overflow-hidden">
+    <Section sectionId="skills" className="overflow-hidden">
       <Container>
         <div className="flex flex-col text-center w-full mb-20">
           <Title title="top skills / favorites" uppercaseTitle />

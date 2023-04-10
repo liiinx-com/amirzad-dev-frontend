@@ -1,9 +1,50 @@
-export interface Profile {}
+export interface Intro {}
+
+export interface MenuItem {
+  title: string;
+  url: string;
+  order: number;
+  className?: string;
+}
+
+export interface AboutItem {
+  id: string;
+  order: number;
+  title: string;
+  content: string[];
+  titleClassName?: string;
+  iconClassName?: string;
+}
+
+export interface Project {
+  id: string;
+  order: number;
+  featured: boolean;
+  title: string;
+  tags: Tag[];
+  content: string[];
+  category: string;
+  titleClassName?: string;
+  imageUrl?: string;
+  videoUrl?: string;
+  repoUrl?: string;
+  slug: string;
+}
 
 export interface Tag {
   title: string;
   order: number;
   className: string;
+}
+
+export interface ContactInfo {
+  id: string;
+  order: number;
+  title: string;
+  content: string;
+  iconName: "location" | "linkedin" | "email";
+  url?: string;
+  iconClassName?: string;
 }
 
 export interface WorkHistoryItem {
@@ -18,6 +59,7 @@ export interface WorkHistoryItem {
   companyIntro: string;
   titleClassName?: string;
   imageUrl?: string;
+  videoUrl?: string;
 }
 
 export interface SkillSet {

@@ -7,3 +7,7 @@ export { FiLinkedin as LinkedinIcon } from "react-icons/fi";
 export { FiCheckCircle as CheckCircleIcon } from "react-icons/fi";
 export { FiChevronRight as ChevronRightIcon } from "react-icons/fi";
 export { FiPlay as YoutubeIcon } from "react-icons/fi";
+export { FiAward as AwardIcon } from "react-icons/fi";
+export { FiX as CloseIcon } from "react-icons/fi";
+export { FiMapPin as MapPinIcon } from "react-icons/fi";
+export { FiAtSign as EmailIcon } from "react-icons/fi";

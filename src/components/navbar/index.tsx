@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MenuIcon } from "@/components/icons";
+import { MenuIcon, CloseIcon } from "@/components/icons";
 import { Menu } from "./menu";
 import { ThemeSwitch } from "./theme-switch";
 import { Logo, IconWrapper, Button } from "@/components";
@@ -16,14 +16,13 @@ export const Navbar = () => {
   } = theme;
 
   return (
-    <nav className={`relative ${className} shadow `}>
+    <nav className={`relative ${className} shadow `} id="home">
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <a href="#">
               <Logo
                 text="Amir Zad"
-                // slogan="Full-Stack Engineer"
                 textClassName={logoClassName}
                 sloganClassName={sloganClassName}
               />
@@ -36,23 +35,10 @@ export const Navbar = () => {
                 className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
                 aria-label="toggle menu"
               >
-                {!isOpen && <IconWrapper icon={<MenuIcon />} />}
-
-                {isOpen && (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
+                {isOpen ? (
+                  <IconWrapper icon={<CloseIcon />} />
+                ) : (
+                  <IconWrapper icon={<MenuIcon />} />
                 )}
               </button>
             </div>
@@ -74,8 +60,6 @@ export const Navbar = () => {
               <button className="mx-4 text-gray-600 transform lg:block dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none">
                 <ThemeSwitch />
               </button>
-
-              <Button title="Download CV" />
             </div>
           </div>
         </div>

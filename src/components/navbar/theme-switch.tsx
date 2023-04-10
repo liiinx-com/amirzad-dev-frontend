@@ -8,7 +8,7 @@ export const ThemeSwitch = () => {
     <span>
       <IconWrapper
         onClick={toggle}
-        color={theme.body.textClassName}
+        className={theme.body.textClassName}
         icon={isDark ? <SunIcon /> : <MoonIcon />}
       />
     </span>

@@ -1,8 +1,19 @@
 // import { Inter } from "next/font/google";
-
-import { Profile, Skills } from "@/blocks";
-import { WorkHistory } from "@/blocks/work-history";
-import { skillSets, getWorkHistory } from "@/data";
+import {
+  About,
+  Contact,
+  Profile,
+  Projects,
+  Skills,
+  WorkHistoryV2,
+} from "@/blocks";
+import {
+  getSkillSets,
+  getContactInfo,
+  getWorkHistory,
+  getProjects,
+  getProfileItems,
+} from "@/data";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -10,16 +21,11 @@ export default function Home() {
   return (
     <div className="container mx-auto max-w-6xl">
       <Profile />
-      <Skills skillSets={skillSets} />
-      <WorkHistory history={getWorkHistory()} />
+      <Skills skillSets={getSkillSets()} />
+      <Projects projects={getProjects()} />
+      <About aboutItems={getProfileItems()} />
+      <WorkHistoryV2 history={getWorkHistory()} />
+      <Contact info={getContactInfo()} />
     </div>
-    // <main className={styles.main}>
-    //   <div className={styles.description}>
-    //     <h2 className={inter.className}>
-    //       Templates <span>-&gt;</span>
-    //     </h2>
-    //     <p className={inter.className}>Explore the Next.js 13 playground.</p>
-    //   </div>
-    // </main>
   );
 }

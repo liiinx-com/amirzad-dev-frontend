@@ -14,7 +14,7 @@ export const SkillItem = ({
   iconClassName = "text-lime-600",
 }: SkillItemProps) => {
   return (
-    <p className="flex items-center  text-gray-600 mb-2">
+    <p className="flex items-center text-gray-600 mb-2">
       <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-gray-400 rounded-full flex-shrink-0 ">
         <IconWrapper
           className={iconClassName}
