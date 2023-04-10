@@ -16,7 +16,7 @@ export const ThemeContextProvider = ({ children }: ThemeContextProps) => {
 
   useEffect(() => {
     document.body.classList.add(...theme.body.className.split(" "));
-  }, []);
+  }, [theme]);
 
   useEffect(() => {
     const root = window.document.documentElement;

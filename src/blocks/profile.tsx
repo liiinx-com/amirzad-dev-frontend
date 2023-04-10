@@ -21,12 +21,12 @@ export const Profile = () => {
             <span className="text-[#1E88E5] font-medium">Web3</span>
             {", "}
             <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-              Devops
+              DevOps
             </span>
             {", "}
             <span className="text-[#FF9900] font-medium">Cloud</span>
             {"  and "}
-            <span className="text-[#9C27B0] font-medium">SAAS</span>.
+            <span className="text-[#9C27B0] font-medium">SaaS</span>.
           </span>
         }
         subContent={

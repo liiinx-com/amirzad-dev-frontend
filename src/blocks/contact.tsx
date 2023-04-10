@@ -58,7 +58,7 @@ export const Contact = ({ info }: ContactProps) => {
           />
         </div>
 
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 justify-center">
           {info.map((info) => (
             <ContactInfo key={info.id} info={info} />
           ))}

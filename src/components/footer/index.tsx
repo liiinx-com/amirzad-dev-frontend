@@ -10,8 +10,9 @@ export const Footer = () => {
           </a>
 
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
-            {getMenuItems().map(({ title, className = "", url }) => (
+            {getMenuItems().map(({ title, url, order }) => (
               <a
+                key={order}
                 href={url}
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"

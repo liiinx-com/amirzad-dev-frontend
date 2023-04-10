@@ -240,9 +240,8 @@ const workHistory: WorkHistoryItem[] = [
     companyUrl:
       "https://www.linkedin.com/company/iiroc-investment-industry-regulatory-organization-of-canada-/mycompany/verification/",
     content: [
-      "Work on Real-Time Customer Experience dashboard for Communication Service Providers.",
-      "Work on a variety of Microservices with technologies.",
-      "Design and develop UI-Backend REST API, and React UI in a team of more than 60 Software engineers",
+      "Designed and developed 100% of an automated data aggregation pipeline to calculate market measures (Vol, Val, Liq,...) in the Canadian stock marketplaces and generate T+1 charts.",
+      "Designed and developed 100% of analytical (big-data) dashboards.",
     ],
     companyIntro: "Investment Industry Regulatory Organization of Canada",
     tags: [
@@ -264,7 +263,12 @@ const workHistory: WorkHistoryItem[] = [
       {
         className: "bg-[#306998] text-[#FFD43B]",
         order: 1,
-        title: "AWS EMR",
+        title: "AWS S",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
+        title: "AWS EMR, S3",
       },
       {
         className: "bg-[#306998] text-[#FFD43B]",
@@ -284,6 +288,11 @@ const workHistory: WorkHistoryItem[] = [
       {
         className: "bg-[#306998] text-[#FFD43B]",
         order: 1,
+        title: "Pandas, Matplotlib",
+      },
+      {
+        className: "bg-[#306998] text-[#FFD43B]",
+        order: 1,
         title: "PySpark",
       },
     ],
@@ -299,9 +308,8 @@ const workHistory: WorkHistoryItem[] = [
     titleClassName: "text-purple-700",
     role: "Senior Full-Stack Engineer",
     content: [
-      "Work on Real-Time Customer Experience dashboard for Communication Service Providers.",
-      "Work on a variety of Microservices with technologies.",
-      "Design and develop UI-Backend REST API, and React UI in a team of more than 60 Software engineers",
+      "Worked on Real-Time Customer Experience dashboard for Communication Service Providers.",
+      "Designed and develop UI-Backend REST API, and React UI in a team of more than 60 software engineers.",
     ],
     companyIntro:
       "Providing AI-Based solutions to Communication Service Providers",
@@ -368,7 +376,12 @@ const workHistory: WorkHistoryItem[] = [
     titleClassName: "text-violet-500",
     companyUrl: "https://www.linkedin.com/company/c2ro/",
     role: "Senior Full-Stack Engineer",
-    content: ["Design and develop Backend REST API and user's dashboard."],
+    content: [
+      "Designed and developed RESTful API.",
+      "Designed and developed user's dashboard front-end.",
+      "Developed the Android version of the dashboard.",
+      "Developed some celery tasks to support data for Python AI services.",
+    ],
     tags: [
       {
         className: "bg-[#306998] text-[#FFD43B]",
@@ -484,6 +497,12 @@ const devopsSet: SkillSet = {
       order: 2,
       rate: 8,
       title: "EC2, S3, EMR",
+    },
+    {
+      id: "1",
+      order: 2,
+      rate: 8,
+      title: "Lambda(Node/Flask)",
     },
     {
       id: "1",
