@@ -76,7 +76,7 @@ export const getProjects = () => {
       title: "Royal Crypto Trader Bot",
       titleClassName: "text-teal-500",
       featured: true,
-      imageUrl: "/assets/trader-bot-02.png",
+      imageUrl: "/assets/trader-bot.png",
       repoUrl: "https://github.com/liiinx-com/falcon-backend",
       videoUrl: "",
       tags: [
