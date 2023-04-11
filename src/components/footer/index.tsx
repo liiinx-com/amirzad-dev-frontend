@@ -35,7 +35,7 @@ export const Footer = () => {
               href="#"
               className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
             >
-              Version 0.1.0
+              Version {process.env.npm_package_version}
             </a>
           </div>
         </div>
