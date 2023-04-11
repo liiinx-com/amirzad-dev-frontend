@@ -18,7 +18,7 @@ export const Profile = () => {
             {", "}
             <span className="text-green-500 font-medium">Tokenization</span>
             {", "}
-            <span className="text-[#1E88E5] font-medium">Web3</span>
+            <span className="text-[#1E88E5] font-medium">Web3/DAAP</span>
             {", "}
             <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               DevOps

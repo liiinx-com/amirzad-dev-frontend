@@ -47,10 +47,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         >
           {title}
         </h1>
-        <p className="leading-relaxed mb-3">
-          Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-          microdosing tousled waistcoat.
-        </p>
+        <p className="leading-relaxed mb-3">{content}</p>
         <ActionButtons project={project} />
       </div>
 

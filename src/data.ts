@@ -5,6 +5,7 @@ import {
   AboutItem,
   ContactInfo,
   MenuItem,
+  HeroItem,
 } from "./types";
 import { orderBy } from "@/utils/lodash";
 
@@ -18,6 +19,21 @@ export const getSkillSets = () => {
   });
   return orderBy(skillSets, ["order"], ["asc"]);
 };
+export const getHeroItem = (): HeroItem => {
+  return {
+    content: [
+      "A simple crypto wallet for Canadians which can be linked to user's credit card and offers the following amazing features:",
+      "KYC Enabled",
+      "Simply buy Royal Crypto Cards from your local stores, scratch it and scan the barcode and deposit your crypto asset into your wallet.",
+      "Auto investment in the top Crypto assets when spending through the app's wallet (Round-Up to the nearest dollar)",
+      "Super easy Automated Trading Bot with your strategies",
+      "Deposit/Withdraw/Buy/Sell/Transfer Crypto assets through the app",
+    ],
+    id: "1",
+    imageUrl: "/assets/rw-banner.jpg",
+    title: "Royal Crypto Startup",
+  };
+};
 export const getProjects = () => {
   const projects: Project[] = [
     {
@@ -26,7 +42,7 @@ export const getProjects = () => {
       slug: "royal-wallet",
       category: "Royal Crypto Startup (MVP)",
       content: [
-        "here goes some content about the crypto wallet project along with some images",
+        "An easy-to-use crypto wallet backed by Royal Crypto backend. Offering amazing features like Crypto Auto Investment, Automated Trading Bot.",
       ],
       title: "Royal Crypto Wallet",
       titleClassName: "text-teal-500",
@@ -71,7 +87,9 @@ export const getProjects = () => {
       id: "2",
       order: 2,
       slug: "crypto-trader-bot",
-      content: [""],
+      content: [
+        "Crypto Trader Bot service which trades crypto assets automatically 247 based on user's selected strategy/configurations and sends events to the user's Telegram account.",
+      ],
       category: "Royal Crypto Startup (MVP)",
       title: "Royal Crypto Trader Bot",
       titleClassName: "text-teal-500",
@@ -106,6 +124,11 @@ export const getProjects = () => {
           title: "Postgresql",
         },
         {
+          className: "bg-amber-500 text-black",
+          order: 2,
+          title: "Binance API",
+        },
+        {
           className: "bg-[#A41E11] text-white",
           order: 4,
           title: "Redis",
@@ -122,7 +145,7 @@ export const getProjects = () => {
       order: 3,
       slug: "personal-portfolio",
       category: "Personal Project",
-      content: [""],
+      content: ["A simple portfolio NextJS website to learn NextJS."],
       featured: false,
       title: "Personal Portfolio",
       titleClassName: "text-purple-600",
@@ -256,22 +279,17 @@ const workHistory: WorkHistoryItem[] = [
         title: "React",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#E61F24] text-black",
         order: 1,
         title: "Java(SpringBoot)",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
-        order: 1,
-        title: "AWS S",
-      },
-      {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#FF9900] text-black",
         order: 1,
         title: "AWS EMR, S3",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#0C4B33] text-white",
         order: 1,
         title: "Django",
       },
@@ -281,17 +299,17 @@ const workHistory: WorkHistoryItem[] = [
         title: "Postgres",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#B6DE64] text-black",
         order: 1,
         title: "Celery",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-blue-800 text-white",
         order: 1,
         title: "Pandas, Matplotlib",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-amber-600 text-white",
         order: 1,
         title: "PySpark",
       },
@@ -315,27 +333,32 @@ const workHistory: WorkHistoryItem[] = [
       "Providing AI-Based solutions to Communication Service Providers",
     tags: [
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-green-700 text-white",
+        order: 1,
+        title: "Microservices",
+      },
+      {
+        className: "bg-blue-600 text-white",
         order: 1,
         title: "Kubernetes",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#008DB1] text-white",
         order: 1,
         title: "Docker",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#F6EEB0] text-[#C15C6B]",
         order: 1,
         title: "Travis-CI",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#4285F4] text-white",
         order: 1,
         title: "GoogleCloud",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#E0234E] text-white",
         order: 1,
         title: "Nestjs",
       },
@@ -345,24 +368,19 @@ const workHistory: WorkHistoryItem[] = [
         title: "React",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#E61F24] text-black",
         order: 1,
         title: "Java(SpringBoot)",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-gray-200 text-black",
         order: 1,
         title: "TDD",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#0074EA] text-white",
         order: 1,
         title: "MUI",
-      },
-      {
-        className: "bg-[#306998] text-[#FFD43B]",
-        order: 1,
-        title: "KAFKA",
       },
     ],
     imageUrl:
@@ -384,17 +402,17 @@ const workHistory: WorkHistoryItem[] = [
     ],
     tags: [
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-gray-200 text-black",
         order: 1,
         title: "MERN Stack",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#2F74C0] text-[#F7F7F7]",
         order: 1,
         title: "TypeScript",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#F76300] text-black",
         order: 1,
         title: "RabbitMQ",
       },
@@ -404,9 +422,9 @@ const workHistory: WorkHistoryItem[] = [
         title: "Redis",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#9FC037] text-[#000]",
         order: 1,
-        title: "Java",
+        title: "Android",
       },
       {
         className: "bg-[#306998] text-[#FFD43B]",
@@ -441,12 +459,12 @@ const workHistory: WorkHistoryItem[] = [
         title: "Python",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#0C4B33] text-white",
         order: 2,
         title: "Django",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#F76300] text-black",
         order: 4,
         title: "RabbitMQ",
       },
@@ -456,7 +474,7 @@ const workHistory: WorkHistoryItem[] = [
         title: "Postgresql",
       },
       {
-        className: "bg-[#306998] text-[#FFD43B]",
+        className: "bg-[#D6002F] text-white",
         order: 5,
         title: "Angular",
       },

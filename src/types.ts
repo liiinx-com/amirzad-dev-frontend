@@ -72,6 +72,13 @@ export interface SkillSet {
   videoUrl?: string;
 }
 
+export interface HeroItem {
+  id: string;
+  imageUrl: string;
+  title: string;
+  content: string[];
+}
+
 export interface Skill {
   id: string;
   title: string;
