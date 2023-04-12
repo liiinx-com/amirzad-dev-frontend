@@ -22,11 +22,13 @@ const ContactInfo = ({
   return (
     <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
       <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0">
+        <a href={url} target="_blank" >
         <IconWrapper
           className={iconClassName}
           size={ICON_SIZE}
           icon={getIconByName(iconName)}
         />
+        </a>
       </div>
       <div className="flex-grow">
         <h2 className="text-gray-900 text-lg title-font font-medium mb-3 hover:text-blue-600 hover:underline">
