@@ -47,7 +47,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         >
           {title}
         </h1>
-        <p className="leading-relaxed mb-3">{content}</p>
+        <p className="leading-relaxed mb-3 dark:text-gray-400">{content}</p>
         <ActionButtons project={project} />
       </div>
 

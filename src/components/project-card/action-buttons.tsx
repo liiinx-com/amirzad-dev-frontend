@@ -11,7 +11,7 @@ export const ActionButtons = ({
     <div className="flex items-center flex-wrap ">
       <a
         href={videoUrl}
-        className="inline-flex text-sm items-center md:mb-2 lg:mb-0 p-1 border text-red-600 bg-white hover:text-white border-[#ff0000]  hover:bg-[#ff0000] rounded-md"
+        className="inline-flex  dark:bg-gray-800 dark:text-gray-400 dark:hover:text-white text-sm items-center md:mb-2 lg:mb-0 p-1 border text-red-600 bg-white hover:text-white border-[#ff0000]  hover:bg-[#ff0000] rounded-md"
       >
         Watch Intro
       </a>

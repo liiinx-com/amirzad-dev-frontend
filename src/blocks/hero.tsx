@@ -18,7 +18,7 @@ export const Hero = ({ item: { content, imageUrl, title } }: HeroProps) => {
           Royal Crypto Startup
         </h1>
         {content.map((c, i) => (
-          <p className="mb-2 leading-relaxed font-semibold" key={i}>
+          <p className="mb-2 dark:text-gray-400 leading-relaxed font-semibold" key={i}>
             {c}
           </p>
         ))}
