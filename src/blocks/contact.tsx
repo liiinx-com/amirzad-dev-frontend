@@ -31,7 +31,7 @@ const ContactInfo = ({
         </a>
       </div>
       <div className="flex-grow">
-        <h2 className="text-gray-900 text-lg title-font font-medium mb-3 hover:text-blue-600 hover:underline">
+        <h2 className="text-gray-900 text-lg dark:text-gray-400 title-font font-medium mb-3 hover:text-blue-600 hover:underline">
           <a title={content} target="_blank" href={url}>
             {content}
           </a>

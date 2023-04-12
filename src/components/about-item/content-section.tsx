@@ -11,7 +11,7 @@ export const ContentSection = ({
   return (
     <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
       <h1
-        className={`text-gray-800 text-2xl title-font font-medium mb-2 ${titleClassName}`}
+        className={`text-gray-800 dark:text-gray-300 text-2xl title-font font-medium mb-2 ${titleClassName}`}
       >
         {title}
       </h1>
@@ -22,7 +22,7 @@ export const ContentSection = ({
             className={`text-amber-400 ${iconClassName}`}
             icon={<StarIcon />}
           />
-          <p className="ml-2 leading-relaxed text-base">{c}</p>
+          <p className="ml-2 leading-relaxed text-base dark:text-gray-400">{c}</p>
         </div>
       ))}
     </div>

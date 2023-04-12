@@ -13,7 +13,7 @@ export const Title = ({
 }: TitleProps) => {
   return (
     <>
-      <h1 className="sm:text-4xl text-3xl font-medium title-font mb-3 text-gray-900">
+      <h1 className="sm:text-4xl dark:text-gray-300 text-3xl font-medium title-font mb-3 text-gray-900">
         {uppercaseTitle ? title.toUpperCase() : title}
       </h1>
       {subtitle && (

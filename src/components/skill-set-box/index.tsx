@@ -20,7 +20,7 @@ export const SkillSetBox = ({
         superTitle
       </h2> */}
 
-      <h1 className="text-3xl text-gray-800  leading-none dark:text-gray-400 flex items-center pb-4 mb-4 border-b border-gray-200">
+      <h1 className="text-3xl text-gray-800 leading-none dark:text-gray-400 flex items-center pb-4 mb-4 border-b border-gray-200">
         <span>{title}</span>
         {/* <span className="text-lg ml-1 font-normal text-gray-500">/mo</span> */}
       </h1>
