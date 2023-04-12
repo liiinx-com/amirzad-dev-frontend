@@ -20,7 +20,7 @@ export const SkillSetBox = ({
         superTitle
       </h2> */}
 
-      <h1 className="text-3xl text-gray-800 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+      <h1 className="text-3xl text-gray-800  leading-none dark:text-gray-400 flex items-center pb-4 mb-4 border-b border-gray-200">
         <span>{title}</span>
         {/* <span className="text-lg ml-1 font-normal text-gray-500">/mo</span> */}
       </h1>
@@ -35,7 +35,7 @@ export const SkillSetBox = ({
         <a
           href={videoUrl}
           target="_blank"
-          className="flex mt-6 items-center justify-center hover:text-white text-red-600 bg-white border-[#ff0000] border py-2 px-4 w-full focus:outline-none hover:bg-[#ff0000] rounded"
+          className="flex mt-6 items-center dark:bg-gray-800 dark:text-gray-400 justify-center dark:border-red-600 hover:text-white dark:hover:text-white text-red-600 bg-white border-[#ff0000] border py-2 px-4 w-full focus:outline-none hover:bg-[#ff0000] rounded"
         >
           Watch Video
         </a>
