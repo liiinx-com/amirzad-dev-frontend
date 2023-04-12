@@ -23,11 +23,11 @@ const WorkItem = ({
               <span>{title}</span>
               <span className="text-green-600"> - {role}</span>
             </h3>
-            <h4 className="mb-4 font-normal text-zinc-700">
+            <h4 className="mb-4 font-normal dark:text-gray-400 text-zinc-700">
               <span>{companyIntro}</span>
             </h4>
           </div>
-          <time className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 font-semibold dark:text-gray-400 flex flex-col">
+          <time className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 font-semibold dark:text-gray-300 flex flex-col">
             <span>{duration[1]}</span>
             <span>{duration[0]}</span>
           </time>
@@ -62,7 +62,7 @@ export const WorkHistoryV2 = ({ history }: WorkHistoryProps) => {
                 title=""
                 uppercaseTitle
                 subtitle={
-                  <span>
+                  <span className="dark:text-gray-300">
                     For the full work history, please visit my{" "}
                     <a
                       className="text-blue-700 font-semibold bg-blue-200 p-1 rounded-md"
