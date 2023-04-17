@@ -31,7 +31,7 @@ export const SkillSetBox = ({
         ))}
       </div>
 
-      {videoUrl && (
+      {videoUrl && false &&  (
         <a
           href={videoUrl}
           target="_blank"
