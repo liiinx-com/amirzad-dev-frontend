@@ -9,3 +9,4 @@ export * from "./skill-set-box";
 export * from "./project-card";
 export * from "./about-item";
 export * from "./alert";
+export * from "./back-to-top";

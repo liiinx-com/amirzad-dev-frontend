@@ -16,17 +16,18 @@ import {
   getProfileItems,
   getHeroItem,
 } from "@/data";
+import { BackToTop } from "@/components/back-to-top";
 
 const alertContent = {
   title: "Heads up!",
   content: (
-    <p>
+    <span>
       The videos are being updated! The next version will be available by{" "}
       <span className="underline font-semibold">
-        the end of Sat April 15, 2023
+        the end of Wed April 19, 2023
       </span>
       .
-    </p>
+    </span>
   ),
 };
 
@@ -40,6 +41,7 @@ export default function Home() {
       <About aboutItems={getProfileItems()} />
       <WorkHistoryV2 history={getWorkHistory()} />
       <Contact info={getContactInfo()} />
+      <BackToTop />
     </div>
   );
 }

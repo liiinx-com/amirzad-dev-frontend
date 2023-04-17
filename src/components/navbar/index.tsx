@@ -4,7 +4,7 @@ import { useState } from "react";
 import { MenuIcon, CloseIcon } from "@/components/icons";
 import { Menu } from "./menu";
 import { ThemeSwitch } from "./theme-switch";
-import { Logo, IconWrapper, Button } from "@/components";
+import { Logo, IconWrapper } from "@/components";
 import { useTheme } from "@/contexts/theme/theme-context";
 
 export const Navbar = () => {
