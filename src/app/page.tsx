@@ -22,9 +22,10 @@ const alertContent = {
   title: "Heads up!",
   content: (
     <span>
-      The videos are being updated! The next version will be available by{" "}
+      More videos are being added to the website! The next version will be
+      available by{" "}
       <span className="underline font-semibold">
-        the end of Wed April 19, 2023
+        the end of Sat April 22, 2023
       </span>
       .
     </span>

@@ -7,6 +7,7 @@ interface CallToActionProps {
   subContent?: ReactNode;
   media: ReactNode;
   buttons?: ReactNode[];
+  featuredButton: ReactNode;
 }
 
 export const CallToAction = ({
@@ -15,6 +16,7 @@ export const CallToAction = ({
   subContent,
   media,
   buttons,
+  featuredButton,
 }: CallToActionProps) => {
   return (
     <Section sectionId="profile">
@@ -38,6 +40,7 @@ export const CallToAction = ({
                 {btn}
               </span>
             ))}
+            {featuredButton && featuredButton}
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">{media}</div>

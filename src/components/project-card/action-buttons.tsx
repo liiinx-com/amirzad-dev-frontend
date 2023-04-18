@@ -9,12 +9,12 @@ export const ActionButtons = ({
 }: ProjectCardProps) => {
   return (
     <div className="flex items-center flex-wrap ">
-      <a
+      {/* <a
         href={videoUrl}
         className="inline-flex  dark:bg-gray-800 dark:text-gray-400 dark:hover:text-white text-sm items-center md:mb-2 lg:mb-0 p-1 border text-red-600 bg-white hover:text-white border-[#ff0000]  hover:bg-[#ff0000] rounded-md"
       >
         Watch Intro
-      </a>
+      </a> */}
       <span className="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm  ">
         <a href={repoUrl} target="_blank">
           <IconWrapper

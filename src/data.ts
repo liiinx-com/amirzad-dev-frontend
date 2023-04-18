@@ -532,7 +532,6 @@ const devopsSet: SkillSet = {
     { id: "1", order: 4, rate: 8, title: "Code Commit/Deploy" },
     { id: "2", order: 7, rate: 8, title: "Docker" },
     { id: "3", order: 6, rate: 8, title: "Travis-CI/Circle-CI" },
-    { id: "4", order: 5, rate: 8, title: "Jenkins" },
   ],
   containerClassName: "border-pink-400",
   videoUrl: "https://www.youtube.com/watch?v=_sEgB9TmCEY",
