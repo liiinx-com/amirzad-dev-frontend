@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { CallToAction } from "@/components/call-to-action";
 import { IconWrapper } from "@/components";
-import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { GithubIcon, LinkedinIcon, YoutubeIcon } from "@/components/icons";
 
 export const Profile = () => {
   return (
@@ -48,6 +48,17 @@ export const Profile = () => {
             <IconWrapper className="text-[#171515]" icon={<GithubIcon />} />
           </a>,
         ]}
+        featuredButton={
+          <a
+            key="intro"
+            className="flex flex-col items-center ml-3 bg-[#FF0000]  py-3 px-5 border border-gray-300 hover:border-gray-800 rounded-lg text-white hover:shadow-xl shadow-lg"
+            href="https://youtu.be/WvaWaTACxqk"
+            target="_blank"
+          >
+            <IconWrapper className="text-white" icon={<YoutubeIcon />} />
+            Quick Introduction About Me
+          </a>
+        }
         media={
           <Image
             src="/assets/profile-image-01.jpg"
