@@ -52,7 +52,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
 
       <div className="p-2 mb-4">
-        <TagList tags={project.tags} />
+        <TagList tags={tags} />
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ export const CallToAction = ({
                 {btn}
               </span>
             ))}
-            {featuredButton && featuredButton}
+            {featuredButton}
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">{media}</div>
