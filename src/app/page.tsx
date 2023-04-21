@@ -18,24 +18,9 @@ import {
 } from "@/data";
 import { BackToTop } from "@/components/back-to-top";
 
-const alertContent = {
-  title: "Heads up!",
-  content: (
-    <span>
-      More videos are being added to the website! The next version will be
-      available by{" "}
-      <span className="underline font-semibold">
-        the end of Sat April 22, 2023
-      </span>
-      .
-    </span>
-  ),
-};
-
 export default function Home() {
   return (
     <div className="container mx-auto max-w-6xl">
-      <Alert {...alertContent} />
       <Profile />
       <Skills skillSets={getSkillSets()} />
       <Projects heroItem={getHeroItem()} projects={getProjects()} />

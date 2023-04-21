@@ -263,8 +263,8 @@ const workHistory: WorkHistoryItem[] = [
     companyUrl:
       "https://www.linkedin.com/company/iiroc-investment-industry-regulatory-organization-of-canada-/mycompany/verification/",
     content: [
-      "Designed and developed 100% of an automated data aggregation pipeline to calculate market measures (Vol, Val, Liq,...) in the Canadian stock marketplaces and generate T+1 charts.",
-      "Designed and developed 100% of analytical (big-data) dashboards.",
+      "Designed and developed 100% of cloud-based automated data aggregation pipeline to calculate market measures (Vol, Val, Liq,...) in the Canadian stock marketplaces and generate T+1 charts.",
+      "Designed and developed 100% of custom analytical BI (Big-Data) tool on top of the canadian stock market data.",
     ],
     companyIntro: "Investment Industry Regulatory Organization of Canada",
     tags: [
@@ -277,6 +277,16 @@ const workHistory: WorkHistoryItem[] = [
         className: "bg-[#61DBFB] text-[#282C34]",
         order: 1,
         title: "React",
+      },
+      {
+        className: "bg-[#F72C5B] text-white",
+        order: 1,
+        title: "Apache ECharts",
+      },
+      {
+        className: "bg-[#0074EA] text-white",
+        order: 1,
+        title: "MUI",
       },
       {
         className: "bg-[#E61F24] text-black",
@@ -356,6 +366,11 @@ const workHistory: WorkHistoryItem[] = [
         className: "bg-[#4285F4] text-white",
         order: 1,
         title: "GoogleCloud",
+      },
+      {
+        className: "bg-green-200 text-black",
+        order: 1,
+        title: "Cypress Testing",
       },
       {
         className: "bg-[#E0234E] text-white",
@@ -462,6 +477,16 @@ const workHistory: WorkHistoryItem[] = [
         className: "bg-[#0C4B33] text-white",
         order: 2,
         title: "Django",
+      },
+      {
+        className: "bg-[#2D3846] text-[#3BB5BE]",
+        order: 2,
+        title: "Apache Cordova",
+      },
+      {
+        className: "bg-[#563d7c] text-white",
+        order: 2,
+        title: "Bootstrap 4",
       },
       {
         className: "bg-[#F76300] text-black",

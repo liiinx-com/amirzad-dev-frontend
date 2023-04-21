@@ -56,7 +56,7 @@ export const Profile = () => {
             target="_blank"
           >
             <IconWrapper className="text-white" icon={<YoutubeIcon />} />
-            Quick Introduction About Me
+            Quick Intro About Me
           </a>
         }
         media={
