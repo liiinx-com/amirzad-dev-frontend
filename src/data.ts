@@ -243,6 +243,7 @@ const aboutItems: AboutItem[] = [
     id: "3",
     title: "Certifications",
     content: [
+      "AWS Certified Developer - AWS - 2025",
       "Blockchain Business Models - Duke University - Coursera",
       "Cryptocurrency and Blockchain: An Introduction to Digital Currencies - Wharton University - Coursera",
     ],
@@ -254,12 +255,81 @@ const aboutItems: AboutItem[] = [
 
 const workHistory: WorkHistoryItem[] = [
   {
+    id: "0",
+    order: 0,
+    title: "Mistplay.com",
+    titleClassName: "text-purple-600",
+    role: "Senior Full-Stack Engineer II",
+    duration: ["Oct 2023", "Present"],
+    companyUrl:
+      "https://www.linkedin.com/company/iiroc-investment-industry-regulatory-organization-of-canada-/mycompany/verification/",
+    content: [
+      "Mostly working on the Backend of Campaign Management and Loyalty Platforms.",
+      "Working directly with the product managers from Idea to deploy and maintain to design, improve and deliver features in a iterate-able, extendable and scalable way.",
+    ],
+    companyIntro: "The #1 loyalty program for mobile gamers",
+    tags: [
+      {
+        className: "bg-green-700 text-white",
+        order: 1,
+        title: "Microservices",
+      },
+      {
+        className: "bg-[#E0234E] text-white",
+        order: 1,
+        title: "Nestjs",
+      },
+      {
+        className: "bg-blue-600 text-white",
+        order: 1,
+        title: "Kubernetes",
+      },
+      {
+        className: "bg-[#008DB1] text-white",
+        order: 1,
+        title: "Docker",
+      },
+      {
+        className: "bg-[#61DBFB] text-[#282C34]",
+        order: 1,
+        title: "React",
+      },
+      {
+        className: "bg-[#E61F24] text-black",
+        order: 1,
+        title: "Java(SpringBoot)",
+      },
+      {
+        className: "bg-[#FF9900] text-black",
+        order: 1,
+        title: "AWS DynamoDB, Postgres, S3",
+      },
+      {
+        className: "bg-[#336791] text-white",
+        order: 1,
+        title: "EKS, ECR, ECS",
+      },
+      {
+        className: "bg-[#B6DE64] text-black",
+        order: 1,
+        title: "Redis, SQS, SNS, SES",
+      },
+      {
+        className: "bg-blue-800 text-white",
+        order: 1,
+        title: "Event-Driven Architecture",
+      },
+    ],
+    imageUrl:
+      "https://media.licdn.com/dms/image/C560BAQHDYdZqS4n_Uw/company-logo_200_200/0/1673464453435?e=1689206400&v=beta&t=MM-UhYdrQK9SMujRqNnhK77Mem6sI5F-isDAXGxb2Fs",
+  },
+  {
     id: "1",
     order: 1,
     title: "IIROC",
     titleClassName: "text-yellow-600",
     role: "Senior Full-Stack Engineer",
-    duration: ["Nov 2020", "Present"],
+    duration: ["Nov 2020", "May 2023"],
     companyUrl:
       "https://www.linkedin.com/company/iiroc-investment-industry-regulatory-organization-of-canada-/mycompany/verification/",
     content: [

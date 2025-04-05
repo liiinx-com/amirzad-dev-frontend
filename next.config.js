@@ -7,6 +7,13 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "d1.awsstatic.com",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

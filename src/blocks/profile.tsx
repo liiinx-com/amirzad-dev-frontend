@@ -12,21 +12,22 @@ export const Profile = () => {
         content={
           <span className="shadow-md">
             Hi, my name is <span className="text-logo-primary">Amir</span>. A
-            software engineer with more than 8 years of experience in Web
+            software engineer with more than 10 years of experience in Web
             Development. Highly Passionate about{" "}
-            <span className="text-[#FF8F00] font-medium">Blockchain</span>
+            <span className="text-[#9C27B0] font-medium">Event-Driven Architecture</span>
             {", "}
-            <span className="text-green-500 font-medium">Tokenization</span>
+            <span className="text-green-500  font-medium">SaaS</span>
+            
             {", "}
+            <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">AdTech</span>
+            {/* {", "}
             <span className="text-[#1E88E5] font-medium">Web3/DAAP</span>
-            {", "}
+             {", "}
             <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               DevOps
-            </span>
-            {", "}
-            <span className="text-[#FF9900] font-medium">Cloud</span>
+            </span> */}
             {"  and "}
-            <span className="text-[#9C27B0] font-medium">SaaS</span>.
+            <span className="text-[#FF9900] font-medium">AWS</span>
           </span>
         }
         subContent={
@@ -37,6 +38,19 @@ export const Profile = () => {
           </span>
         }
         buttons={[
+          <a
+            key="aws"
+            href="https://www.linkedin.com/in/amir-m-zad/"
+            target="_blank"
+          >
+            <Image
+            src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png"
+            alt="Amir Zad - Full stack engineer - AWS Certified Developer Associate"
+            width={180}
+            height={150}
+            className={`object-cover object-center`}
+          />
+          </a>,
           <a
             key="linkedin"
             href="https://www.linkedin.com/in/amir-m-zad/"
@@ -51,12 +65,12 @@ export const Profile = () => {
         featuredButton={
           <a
             key="intro"
-            className="flex flex-col items-center ml-3 bg-[#FF0000]  py-3 px-5 border border-gray-300 hover:border-gray-800 rounded-lg text-white hover:shadow-xl shadow-lg"
+            className="flex flex-col gap-2 text-center items-center justify-center ml-3 bg-[#FF0000]  py-3 px-5 border border-gray-300 hover:border-gray-800 rounded-lg text-white hover:shadow-xl shadow-lg"
             href="https://youtu.be/WvaWaTACxqk"
             target="_blank"
           >
             <IconWrapper className="text-white" icon={<YoutubeIcon />} />
-            Quick Intro About Me
+            <p>Quick Intro</p>
           </a>
         }
         media={
