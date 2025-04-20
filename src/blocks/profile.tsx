@@ -38,19 +38,19 @@ export const Profile = () => {
           </span>
         }
         buttons={[
-          <a
-            key="aws"
-            href="https://www.linkedin.com/in/amir-m-zad/"
-            target="_blank"
-          >
-            {/* <Image
-            src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png"
-            alt="Amir Zad - Full stack engineer - AWS Certified Developer Associate"
-            width={180}
-            height={150}
-            className={`object-cover object-center`}
-          /> */}
-          </a>,
+          // <a
+          //   key="aws"
+          //   href="https://www.linkedin.com/in/amir-m-zad/"
+          //   target="_blank"
+          // >
+          //   <Image
+          //   src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png"
+          //   alt="Amir Zad - Full stack engineer - AWS Certified Developer Associate"
+          //   width={180}
+          //   height={150}
+          //   className={`object-cover object-center`}
+          // />
+          // </a>,
           <a
             key="linkedin"
             href="https://www.linkedin.com/in/amir-m-zad/"
